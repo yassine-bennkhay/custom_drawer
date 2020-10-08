@@ -1,24 +1,21 @@
-
 import 'package:flutter/material.dart';
+import 'package:quotes/theme.dart';
 
-import 'profile_1.dart';
+import 'drawer.dart';
+import 'home_screen.dart';
 
-main() {
+void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      title: 'Flutter UI',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-fontFamily: 'Myfont1'
-      ),
       debugShowCheckedModeBanner: false,
-      home: Profile(),
+      theme: mythemedata,
+     home: HomeScreen(),
     );
   }
 }
